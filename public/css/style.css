@@ -124,4 +124,10 @@ opacity: 1;
 .ubicacion{
 
 	margin-left: 980px;
+	color:#A1A4A6;
+}
+ #hrefLogout{
+ 	text-decoration: none;
+	color:#A1A4A6;
+
 }

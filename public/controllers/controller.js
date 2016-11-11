@@ -22,6 +22,7 @@ controlApp.controller('micontroller', ['$scope', '$http', function($scope, $http
 
 
 
+ 
 
 
 	}]);﻿

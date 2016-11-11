@@ -16,34 +16,23 @@
   </header>
 
 
-  <p class="ubicacion"> {{user.fname}}&nbsp; {{user.lname}}&nbsp; ({{user.login}})&nbsp;&nbsp;<a ng-href="{{logout}}" ng-click="logout()" class="tag1">logout</a></p>
+  <p class="ubicacion"> {{user.fname}}&nbsp; {{user.lname}}&nbsp; ({{user.login}})&nbsp;&nbsp;<a ng-href="{{logout}}" ng-click="logout()" class="hrefLogout">logout</a></p>
 
 
- <div class="container"> 
- <table class="table">
+  <div>
 
-<input type="checkbox" id="spoiler1"></input>
-<label for="spoiler1"></label>
-<div class="spoiler">CONTENIDO OCULTO</div>
+    <table>
+      <tbody>
 
-<input type="checkbox" id="spoiler2"></input>
-<label for="spoiler2" ></label>
-<div class="spoiler">CONTENIDO OCULTO</div>
+         <tr ng-repeat="cursos in courses">
+            <td>   
+              <div ng-click="accion(cursos._id)" style="display: {{hide}}"><strong>{{cursos.code}}</strong>{{cursos.name}}</div>
+              <div id="{{cursos._id}}">{{cursos.description}}</div>
+            </td>
+          </tr>
 
-<input type="checkbox" id="spoiler3"></input>
-<label for="spoiler3" ></label>
-<div class="spoiler">CONTENIDO OCULTO</div>
-
-<input type="checkbox" id="spoiler4"></input>
-<label for="spoiler4" ></label>
-<div class="spoiler">CONTENIDO OCULTO</div>
-
-<input type="checkbox" id="spoiler5"></input>
-<label for="spoiler5" ></label>
-<div class="spoiler">CONTENIDO OCULTO</div>
-
-
-</table>
+      </tbody>
+    </table>
 </div>
 
 
