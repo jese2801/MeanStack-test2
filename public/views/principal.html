@@ -8,7 +8,7 @@
      <link rel="stylesheet" type="text/css" href="css/style.css"> 
     
 </head>
-<body ng-controller="micontroller">
+<body ng-controller="micontroller"  ng-init="listarCursos()">
 
  <header>
  <br>
@@ -19,15 +19,15 @@
   <p class="ubicacion"> {{user.fname}}&nbsp; {{user.lname}}&nbsp; ({{user.login}})&nbsp;&nbsp;<a ng-href="{{logout}}" ng-click="logout()" class="hrefLogout">logout</a></p>
 
 
-  <div>
+  <div >
 
     <table>
       <tbody>
 
          <tr ng-repeat="cursos in courses">
             <td>   
-              <div ng-click="accion(cursos._id)" style="display: {{hide}}"><strong>{{cursos.code}}</strong>{{cursos.name}}</div>
-              <div id="{{cursos._id}}">{{cursos.description}}</div>
+              <div id="datosCurso" ng-click="accion(cursos._id)" style="display: {{hide}}"><strong>&nbsp;&nbsp;{{cursos.code}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{cursos.name}} <p id="pDetalles">Details</p></div>
+              <div class="descripcion" id="{{cursos._id}}">{{cursos.description}} <a href="{{cursos.launch}}" target="_blank">Launch</a></div>
             </td>
           </tr>
 

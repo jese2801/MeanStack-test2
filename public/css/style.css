@@ -131,3 +131,25 @@ opacity: 1;
 	color:#A1A4A6;
 
 }
+
+#datosCurso{
+border-style: groove;
+width: 50%;
+margin-left: 300px;
+height: 35px;
+
+
+}
+
+.descripcion{
+
+	border-style: groove;
+	width: 45%;
+	margin-left: 361px;
+}
+
+#pDetalles{
+
+
+	margin-left: 300px;
+}

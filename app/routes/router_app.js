@@ -29,6 +29,12 @@ router.get("/user",function(req,res){
   });
 });
 
+  router.get('/Courses', function (req, res){
+
+     coleCourses.find(function(err, docs){
+     res.json(docs);
+      });
+     });
 
 
 router.get("/logout",function(req,res){

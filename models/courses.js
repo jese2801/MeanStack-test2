@@ -11,4 +11,4 @@ var courses_schema = new Schema({
 
 var courses = mongoose.model("courses",courses_schema);
 
-module.exports = courses;
+module.exports.courses = courses;
