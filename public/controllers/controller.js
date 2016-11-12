@@ -28,7 +28,7 @@ $scope.listarCursos = function(){
      });
    };
 
-  var Ocultaraccion=function(){
+  var Oculta=function(){
 
     for (var i = $scope.courses.length - 1; i >= 0; i--) {
       $('#'+$scope.courses[i]._id).attr('style','display:none');
@@ -36,7 +36,7 @@ $scope.listarCursos = function(){
 
   };
   $scope.accion=function(id){
-    Ocultaraccion();
+    Oculta();
     $('#'+id).removeAttr("style");
 
   };

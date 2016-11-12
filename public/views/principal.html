@@ -26,9 +26,10 @@
 
          <tr ng-repeat="cursos in courses">
             <td>   
-              <div id="datosCurso" ng-click="accion(cursos._id)" style="display: {{hide}}"><strong>&nbsp;&nbsp;{{cursos.code}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{cursos.name}} <p id="pDetalles">Details</p></div>
-              <div class="descripcion" id="{{cursos._id}}">{{cursos.description}} <a href="{{cursos.launch}}" target="_blank">Launch</a></div>
+              <div id="datosCurso" ng-click="accion(cursos._id)"><strong>&nbsp;&nbsp;{{cursos.code}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;{{cursos.name}} <p id="pDetalles">Details</p></div>
+              <div style="display: none;" class="descripcion" id="{{cursos._id}}">{{cursos.description}} <a id="launchq" href="{{cursos.launch}}" target="_blank">Launch</a></div>
             </td>
+
           </tr>
 
       </tbody>
