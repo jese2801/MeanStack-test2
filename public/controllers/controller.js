@@ -20,14 +20,20 @@ controlApp.controller('micontroller', ['$scope', '$http', function($scope, $http
 		});
 	}
 
-
 $scope.listarCursos = function(){
 
-     $http.get('/app/Courses').success(function(response){
-        $scope.courses = response;   
-     });
-   };
+    $http.get('/app/user').success(function(response) {
+     $scope.user = response;
+var username =  response.login;
+      $http.get('/app/Courses/' +username).success(function(response){
+      $scope.courses = response; 
 
+     });
+
+    });
+ 
+
+   };
   var Oculta=function(){
 
     for (var i = $scope.courses.length - 1; i >= 0; i--) {

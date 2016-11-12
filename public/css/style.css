@@ -15,14 +15,18 @@ color: white;
 
 
 }
+body{
+	background-color: #F4F1EE;
+}
 
 form{
 
 	width: 500px;
 	height: 200px;
-	margin-top: 60px;
+	margin-top: 180px;
 	margin-left: 400px;
-	border-style: groove;
+	border:1px solid grey;
+	background-color:white;
 }
 
 #inLogin1{
@@ -32,31 +36,38 @@ form{
 	margin-left: 40px;
    margin-right: 30px;
    width: 250px;
+   height: 20px;
 	
 }
 
 #inLogin2{
 
 float: right;
+margin-top: 5px;
 
 margin-left: 40px;
 margin-right: 30px;
  width: 250px;
+  height: 20px;
 	
 }
 
 #idencabezado1{
    margin-left: 80px;
-	margin-top: 60px;
-	color: #C5C2C0;
+	margin-top: 58px;
+	font-weight: normal;
+	
 	color:#A1A4A6;
+	font-size: 20px;
 }
 #idencabezado2{
 
-	margin-top: 10px;
+	margin-top: 3px;
 	margin-left: 80px;
-	color: #C5C2C0;
+	
 	color:#A1A4A6;
+	font-size: 20px;
+	font-weight: normal;
 
 }
 
@@ -66,12 +77,14 @@ margin-right: 30px;
 
 #btnLogin{
 	margin-top: 10px;
-	margin-left: 345px;
-	width: 120px;
-	height: 30px;
-	background: transparent;
-	border-style: groove;
+	
+	margin-left: 333px;
+	width: 130px;
+	height: 33px;
+	background-color:white;
+	border:1px solid grey;
 	color:#A1A4A6;
+	font-size: 20px;
 }
 
 #datosUsuario{
@@ -80,39 +93,6 @@ margin-right: 30px;
 
 
 
-/* Ocultar botón radio */
-input[id^="spoiler"]{
-display: none;
-}
-/* Estilo botón clicable */
-input[id^="spoiler"] + label {
-display: block;
-width: 600px;
-height: 50px;
-margin: 0 auto;
-padding: 5px 20px;
-border-style: groove;
-
-cursor: pointer;
-}
-/* Estilo botón cuando su INPUT está seleccionado */
-input[id^="spoiler"]:checked + label {
-color: #333;
-/*background: #ccc;*/
-}
-/* Estilo caja SPOILER (inicialmente oculto) */
-input[id^="spoiler"] ~ .spoiler {
-width: 90%;
-height: 0;
-overflow: hidden;
-opacity: 0;
-margin: 10px auto 0; 
-}
-/* Estilo caja SPOILER cuando su INPUT está seleccionado */
-input[id^="spoiler"]:checked + label + .spoiler{
-height: auto;
-opacity: 1;
-}
 
 #nombreUsuario{
 
@@ -125,36 +105,54 @@ opacity: 1;
 
 	margin-left: 980px;
 	color:#A1A4A6;
+	margin-top: 30px;
 }
- #hrefLogout{
- 	text-decoration: none;
+ #logout{
+ 	
 	color:#A1A4A6;
 
 }
 
 #datosCurso{
-border-style: groove;
-width: 50%;
-margin-left: 300px;
-height: 35px;
+border:1px solid grey;
+width: 650px;
+margin-left: 350px;
+
+padding: 1%;
+background-color:white;
+
+
+
+
 
 
 }
 
 .descripcion{
 
-	border-style: groove;
+	border:1px solid grey;
 	width: 45%;
-	margin-left: 361px;
+	margin-left: 441px;
+	position: static;
+	background-color:white;
+	text-align: justify;
+	padding: 0.5%
 }
 
-#pDetalles{
 
-
-	margin-left: 300px;
-}
 
 #launchq{
 
 	margin-left: 360px;
+	color:gray;
 }
+
+
+#pDetalles{
+
+	float: right;
+ text-align: right;
+ color: grey;
+ margin-right: 5px;
+}
+

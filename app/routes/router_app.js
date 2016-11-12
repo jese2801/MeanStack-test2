@@ -29,12 +29,13 @@ router.get("/user",function(req,res){
   });
 });
 
-  router.get('/Courses', function (req, res){
+  router.get('/Courses/:username', function(req, res){
 
-     coleCourses.find(function(err, docs){
-     res.json(docs);
-      });
-     });
+ var username = req.params.username;
+ coleCourses.find({users: username}, function(err, doc){
+  res.json(doc);
+ });
+});
 
 
 router.get("/logout",function(req,res){
